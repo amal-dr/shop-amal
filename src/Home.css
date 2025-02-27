@@ -1,0 +1,48 @@
+/* Background slider section */
+.background-slider-home {
+ 
+ padding: 80px;
+ margin: 4àpx;
+  position: relative;
+  height: 400px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  animation: slideBackground 10s infinite; /* Controls the speed of the background sliding */
+}
+
+/* Adding opacity overlay */
+.background-slider-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+/* Title inside the section */
+.background-slider-home .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  z-index: 2; /* Make sure title appears above the overlay */
+}
+
+/* Responsive design: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .background-slider-home {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+
+  .background-slider-home .title {
+    font-size: 30px; /* Reduce font size for smaller screens */
+  }
+}

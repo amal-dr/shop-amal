@@ -1,0 +1,68 @@
+/* app.css */
+
+/* Basic Layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: aliceblue; 
+     color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3 {
+    color: #ff6600; /* Orange */
+  }
+  
+  /* Links with Hover Animation */
+  a {
+    text-decoration: none;
+    color: #ff6600; /* Orange */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  a:hover {
+    color: #e65c00;
+    transform: scale(1.1);
+  }
+  
+  /* Card hover effects */
+  .product-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Smooth transition when navigating */
+  .fade-enter, .fade-exit {
+    opacity: 0;
+  }
+  
+  .fade-enter-active, .fade-exit-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
+  }
+  
+  /* Button Styling */
+  .button {
+    background-color: #ff6600; /* Orange */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e65c00;
+  }
+  

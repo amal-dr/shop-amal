@@ -1,0 +1,22 @@
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #d7e7ff;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+}

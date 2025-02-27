@@ -1,0 +1,55 @@
+/* Nav.css */
+.navbar-expand-lg {
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+  }
+  
+  .navbar-expand-lg.navbar-brand :hover{
+    color: #ecf0f1; /* Light color for brand */
+    font-weight: bold;
+    border-bottom: blue 2px;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+  }
+  
+  .navbar-custom .navbar-nav .nav-link {
+    color: #ecf0f1; /* Light color for nav links */
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  
+  
+  .navbar-custom .navbar-toggler {
+    border-color: #ecf0f1; /* Light border for the toggler */
+  }
+  
+  .navbar-custom .navbar-toggler-icon {
+    background-color: #ecf0f1; /* Light color for the hamburger icon */
+  }
+  
+  /* Move navbar links to the right side using ms-auto */
+  .navbar-custom .navbar-nav.ms-auto {
+    margin-left: auto; /* This pushes the navbar items to the right */
+  }
+  
+  /* Add some styling for active and hover effects */
+  .navbar-custom .navbar-nav .nav-item.active .nav-link {
+    color: #f39c12; /* Gold color for active state */
+  }
+  
+  .navbar-custom .navbar-nav .nav-item.active .nav-link:hover {
+    background-color: #2c3e50; /* Dark background for active link */
+  }
+  .nav-link{
+    border: 2px;
+  }
+  .nav-link:hover{
+    border-bottom:2px  black;
+  }
+
+  .center-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
